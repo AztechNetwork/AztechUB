@@ -454,6 +454,5 @@ async def rmprofile(m: Message, args):
 @app.on_message(gen("repo"))
 async def repolink_handler(_, m: Message):
     """ repolink handler for profile plugin """
-    await m.reply_photo(photo = "", caption="",
-        disable_web_page_preview=True
+    await m.reply_photo(photo = "", caption=""
     )
