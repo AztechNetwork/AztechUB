@@ -73,7 +73,7 @@ async def install_requirements():
 @app.on_message(gen("update", exclude = ["sudo", "channel"]))
 async def update_handler(_, m):
     try:
-        branch = "master"
+        branch = "main"
         remote = "upstream"
 
         cmd = m.text.split()
