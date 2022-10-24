@@ -10,6 +10,7 @@ from pyrogram.types import (
     )
 
 from pyrogram.errors import PeerIdInvalid
+from pyrogram.enums import ParseMode
 
 from main import app, gen
 
@@ -454,5 +455,6 @@ async def rmprofile(m: Message, args):
 @app.on_message(gen("repo"))
 async def repolink_handler(_, m: Message):
     """ repolink handler for profile plugin """
-    await m.reply_photo(photo = "", caption=""
+    await m.reply_photo(photo = "https://telegra.ph/file/2b2a5e82d9405795d90b4.jpg", caption="HERE IS YOUR AZTECH USERBOT [REPO](https://github.com/AztechNetwork/AztechUB)",
+                        parse_mode=ParseMode.MARKDOWN
     )
